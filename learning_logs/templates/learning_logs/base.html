@@ -8,13 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Learning Log</title>
 
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
     {% bootstrap_css %} {% bootstrap_javascript jquery='full' %}
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light mb-4 border">
+    <nav class="navbar navbar-expand-md navbar-dark bg-light mb-4 border">
 
         <a href="{% url 'learning_logs:index' %}" class="navbar-brand">
             Learning Log
@@ -59,6 +61,37 @@
             {% block content %}{% endblock content %}
         </div>
     </main>
+
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">
+                        Toronto, Ontario
+                        <br /> Canada
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Web Links</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-github"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-codepen"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">About Learning Log</h4>
+                    <p class="lead mb-0">
+                        Learning log is a free to use note keeping web application. Keep track of topics you're currently learning and more..
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
