@@ -1,7 +1,7 @@
 {% extends "learning_logs/base.html" %} {% block page_header %}
 <h3>{{ topic }}</h3>
 {% endblock page_header %} {% block content %}
-<p>
+<p class="new-entry-link">
     <a href="{% url 'learning_logs:new_entry' topic.id %}">Add new entry</a>
 </p>
 <ul>
@@ -9,8 +9,8 @@
     <div class="card mb-3">
         <h4 class="card-header">
             {{ entry.date_added|date:'M d, Y H:i' }}
-            <small>
-                        <a href="{% url 'learning_logs:edit_entry' entry.id %}">
+            <small>-
+                        <a href="{% url 'learning_logs:edit_entry' entry.id %}" class="card-link">
                             Edit entry
                         </a>
                     </small>
