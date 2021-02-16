@@ -7,7 +7,7 @@
 }
 
 .jumbotron {
-    background-color: #8796a5;
+    background-color: #8796a538;
 }
 
 .jumbotron .display-3 {
@@ -51,6 +51,10 @@
 .btn-primary:hover,
 .btn-primary:active {
     background-color: #1c2630;
+}
+
+.topics ul li {
+    list-style-type: none;
 }
 
 .topics li a {
