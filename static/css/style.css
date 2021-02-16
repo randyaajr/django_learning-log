@@ -29,6 +29,10 @@
     color: #fff;
 }
 
+.container form textarea {
+    max-width: 300px;
+}
+
 
 /*--------------------------------Footer*/
 
@@ -87,6 +91,16 @@
 }
 
 .new-entry-link a:hover {
+    color: #1c26307e;
+    text-decoration: none;
+}
+
+.new-entry a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.new-entry a:hover {
     color: #1c26307e;
     text-decoration: none;
 }
