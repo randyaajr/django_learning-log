@@ -46,7 +46,10 @@
     background-color: #2c3e50;
 }
 
-.btn-primary:hover {
+.btn-primary:link,
+.btn-primary:visited,
+.btn-primary:hover,
+.btn-primary:active {
     background-color: #1c2630;
 }
 
@@ -70,6 +73,16 @@
 }
 
 .card-link:hover {
-    color: #0080ff7e;
+    color: #929292;
+    text-decoration: none;
+}
+
+.new-entry-link a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.new-entry-link a:hover {
+    color: #1c26307e;
     text-decoration: none;
 }
